@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct SavrApp: App {
+    
+    //MARK: Stored properties
+    @State var plans: [Plan] = examplePlans
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+                
+            PlanListView(plans: $plans)
         }
     }
 }

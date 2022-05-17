@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		EA30E2CC282BFABA00010409 /* SavrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30E2CB282BFABA00010409 /* SavrApp.swift */; };
-		EA30E2CE282BFABA00010409 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30E2CD282BFABA00010409 /* ContentView.swift */; };
 		EA30E2D0282BFABC00010409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA30E2CF282BFABC00010409 /* Assets.xcassets */; };
 		EA30E2D3282BFABC00010409 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA30E2D2282BFABC00010409 /* Preview Assets.xcassets */; };
+		EA30E2DC282BFBBD00010409 /* PlanListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30E2DB282BFBBD00010409 /* PlanListView.swift */; };
+		EA30E2DF282BFBE400010409 /* NewPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30E2DE282BFBE400010409 /* NewPlanView.swift */; };
+		EA30E2E2282BFC0F00010409 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30E2E1282BFC0F00010409 /* Plan.swift */; };
+		EA30E2E5282BFC4400010409 /* OpeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30E2E4282BFC4400010409 /* OpeningView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA30E2C8282BFABA00010409 /* Savr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Savr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA30E2CB282BFABA00010409 /* SavrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavrApp.swift; sourceTree = "<group>"; };
-		EA30E2CD282BFABA00010409 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA30E2CF282BFABC00010409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA30E2D2282BFABC00010409 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA30E2DB282BFBBD00010409 /* PlanListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanListView.swift; sourceTree = "<group>"; };
+		EA30E2DE282BFBE400010409 /* NewPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlanView.swift; sourceTree = "<group>"; };
+		EA30E2E1282BFC0F00010409 /* Plan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		EA30E2E4282BFC4400010409 /* OpeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				EA30E2CB282BFABA00010409 /* SavrApp.swift */,
-				EA30E2CD282BFABA00010409 /* ContentView.swift */,
+				EA30E2E0282BFBF100010409 /* Model */,
+				EA30E2D9282BFB3C00010409 /* Views */,
+				EAA4CED8282D463900A6604C /* External */,
 				EA30E2CF282BFABC00010409 /* Assets.xcassets */,
 				EA30E2D1282BFABC00010409 /* Preview Content */,
 			);
@@ -65,6 +73,31 @@
 				EA30E2D2282BFABC00010409 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA30E2D9282BFB3C00010409 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA30E2E4282BFC4400010409 /* OpeningView.swift */,
+				EA30E2DB282BFBBD00010409 /* PlanListView.swift */,
+				EA30E2DE282BFBE400010409 /* NewPlanView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA30E2E0282BFBF100010409 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA30E2E1282BFC0F00010409 /* Plan.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAA4CED8282D463900A6604C /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = External;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA30E2CE282BFABA00010409 /* ContentView.swift in Sources */,
+				EA30E2DF282BFBE400010409 /* NewPlanView.swift in Sources */,
 				EA30E2CC282BFABA00010409 /* SavrApp.swift in Sources */,
+				EA30E2DC282BFBBD00010409 /* PlanListView.swift in Sources */,
+				EA30E2E2282BFC0F00010409 /* Plan.swift in Sources */,
+				EA30E2E5282BFC4400010409 /* OpeningView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
