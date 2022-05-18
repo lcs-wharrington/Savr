@@ -15,8 +15,10 @@ struct SavrApp: App {
     
     var body: some Scene {
         WindowGroup {
-                
-            PlanListView(plans: $plans)
+              
+            OpeningView()
+            
+            //PlanListView(plans: $plans)
         }
     }
 }
